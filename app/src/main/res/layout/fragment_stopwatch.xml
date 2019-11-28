@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2953C5"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <TextView
+        android:id="@+id/stopwatchHrsMinSecTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00"
+        android:textColor="#F5F7F3"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/stopwatchmSecTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="324dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="000"
+        android:textColor="#D7FAA1"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopwatchHrsMinSecTextView"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <Button
+        android:id="@+id/startPauseButton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/start_pause_btnbckg"
+        android:fadingEdge="vertical"
+        android:soundEffectsEnabled="false"
+        android:text="Start"
+        android:textColor="#3034C9"
+        app:layout_constraintEnd_toStartOf="@+id/resetButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopwatchmSecTextView" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="@drawable/reset_btnbckg_active"
+        android:text="Reset"
+        android:textColor="#3034C9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/startPauseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/startPauseButton" />
+
+    <Button
+        android:id="@+id/saveLapButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/save_lap_btnbckg"
+        android:text="Save Lap"
+        android:textColor="#D7FAA1"
+        app:layout_constraintBottom_toTopOf="@+id/lapTimeListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startPauseButton" />
+
+    <ListView
+        android:id="@+id/lapTimeListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:foreground="#00D81B60"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="@dimen/custom"
+        android:scrollbarStyle="outsideOverlay"
+        android:smoothScrollbar="true"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveLapButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

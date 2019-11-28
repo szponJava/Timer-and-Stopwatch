@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3034C9</color>
+    <color name="colorPrimaryDark">#3034C9</color>
+    <!--<color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>-->
+
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="numberPickerColActive">#FFFF00</color>
+    <color name="numberPickerColDisable">#A1FFFF00</color>
+    <color name="numberPicker_dividerColour">#00ffffff</color>
+
+    <color name="stopPauseResetBtnTextColour">#3034C9</color>
+    <color name="resetBtnTextColourDisabled">#503034C9</color>
+    <color name="lapSaveBtnTextColourActive">#D7FAA1</color>
+    <color name="lapSaveBtnTextColourDisabled">#70D7FAA1</color>
+
+    <color name="listViewColour">#D7FAA1</color>
+
+
+
+
+
+
+</resources>
